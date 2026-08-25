@@ -1,0 +1,6 @@
+# RunML is a Python project.
+# Installation/uninstallation scripts are platform wrappers
+# and are excluded from GitHub language statistics.
+
+*.ps1 linguist-vendored
+*.sh linguist-vendored
