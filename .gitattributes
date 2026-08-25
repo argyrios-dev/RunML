@@ -1,22 +1,16 @@
-# Auto detect text files and perform LF normalization
+# Normalize text files
 * text=auto
 
-# Python source
-*.py text eol=lf
-
-# Documentation
+# Ignore documentation
 *.md linguist-documentation
 
-# Build, install and maintenance scripts
+# Ignore project metadata
+*.toml linguist-generated
+
+# Ignore shell/install scripts
 *.sh linguist-generated
 *.ps1 linguist-generated
 
-# GitHub configuration
-.github/** linguist-generated
-
-# Project metadata
-pyproject.toml linguist-documentation
-
-# Ignore licenses and security documentation in language statistics
-LICENSE linguist-documentation
-SECURITY.md linguist-documentation
+# Ignore Git configuration files
+.gitignore linguist-generated
+.gitattributes linguist-generated
