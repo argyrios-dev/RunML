@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runml-local"
+version = "0.6.0"
+description = "Lightweight local machine-learning resource prediction for Windows and Apple Silicon macOS."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "psutil>=5.9"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+[project.scripts]
+runml = "runml.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["runml*"]

@@ -1,0 +1,29 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local RunML data (never commit user/trained data)
+data/
+models/
+reports/
+config.json
+*.joblib
+*.pkl
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test / temporary
+.pytest_cache/
+.coverage
+htmlcov/
+*.tmp
+*.log
