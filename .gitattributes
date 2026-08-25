@@ -1,5 +1,22 @@
-# RunML is a Python project.
-# Platform installer wrappers are excluded from GitHub language statistics.
+# Auto detect text files and perform LF normalization
+* text=auto
 
-*.sh linguist-detectable=false
-*.ps1 linguist-detectable=false
+# Python source
+*.py text eol=lf
+
+# Documentation
+*.md linguist-documentation
+
+# Build, install and maintenance scripts
+*.sh linguist-generated
+*.ps1 linguist-generated
+
+# GitHub configuration
+.github/** linguist-generated
+
+# Project metadata
+pyproject.toml linguist-documentation
+
+# Ignore licenses and security documentation in language statistics
+LICENSE linguist-documentation
+SECURITY.md linguist-documentation
