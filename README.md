@@ -5,8 +5,8 @@ resource usage of workloads and running applications.
 
 ## Official platforms
 
-- **Windows 10/11**
-- **macOS on Apple Silicon (arm64: M1 or newer)**
+- **Windows 10/11** — requires **Python 3.10 or newer**
+- **macOS on Apple Silicon (arm64: M1 or newer)** — requires **Python 3.10 or newer**
 
 The application logic is shared Python code. Platform-specific installers create
 a private native Python runtime and expose the same global command:
